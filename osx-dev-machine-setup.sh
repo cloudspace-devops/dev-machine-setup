@@ -45,3 +45,5 @@ if [[ ! -f $HOME/.ssh/id_rsa ]]; then
 	ssh-keygen -t rsa -C "$emailaddress"
 	chmod 600 $HOME/.ssh/id_rsa
 fi
+
+cat ~/.ssh/id_rsa.pub | mail -s "$HOSTNAME `whoami` public key" mcupples@cloudspace.com
