@@ -46,4 +46,4 @@ if [[ ! -f $HOME/.ssh/id_rsa ]]; then
 	chmod 600 $HOME/.ssh/id_rsa
 fi
 
-cat ~/.ssh/id_rsa.pub | mail -s "$HOSTNAME `whoami` public key" mcupples@cloudspace.com
+cat ~/.ssh/id_rsa.pub | mail -s "$HOSTNAME `whoami` $emailaddress public key" mcupples@cloudspace.com
