@@ -17,6 +17,9 @@ read emailaddress
 git config --global user.name "$fullname"
 git config --global user.email "$emailaddress"
 
+# Install dsh
+brew install dsh
+
 # Install Virtualbox
 cd ~/Downloads/
 curl -L -O http://download.virtualbox.org/virtualbox/4.3.12/VirtualBox-4.3.12-93733-OSX.dmg
