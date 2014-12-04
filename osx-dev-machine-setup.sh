@@ -19,6 +19,14 @@ git config --global user.email "$emailaddress"
 
 # Install dsh
 brew install dsh
+mkdir -p ~/.dsh/groups
+
+# Install awscli
+sudo pip install awscli
+mkdir -p ~/.aws
+echo "[default]" >> ~/.aws/config
+echo "region=us-west-1" >> ~/.aws/config
+echo "output=json" >> ~/.aws/config
 
 # Install Virtualbox
 cd ~/Downloads/
